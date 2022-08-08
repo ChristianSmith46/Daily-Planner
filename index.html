@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,8 +28,79 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+    <!-- Changed from container to container-fluid to cover the whole width and it seemd to fix the save button animation(uninentional) -->
+    <div class="container-fluid">
       <!-- Timeblocks go here -->
+      <!-- Each timeblock follows the same styles just different text -->
+      <!-- Use the row and time-block classes provided in the style.css for each row-->
+      <!-- Each time block is set up so that the text input column is 4x the length of the sec columns-->
+      <div class="row time-block">
+        <!-- Use the hour class to add  the left side of the row and use bootstrap for the columns-->
+        <section class="col-2 hour">9 AM</section>
+        <!-- Use the textarea tags to input data and use the css provided in style.css-->
+        <textarea class="col-8 description"></textarea>
+        <!-- Use the saveBtn class given in the css -->
+        <button class="saveBtn col-2">
+          <!-- Used font awesome classes to get the save button under the i tags -->
+          <i class="fa fa-save"></i>
+        </button>
+      </div>
+      <div class="row time-block">
+        <div class="col-2 hour">10 AM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+      <div class="row time-block">
+        <div class="col-2 hour">11 AM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="fa fa-save"></i>
+        </button>
+      </div>
+      <div class="row time-block">
+        <div class="col-2 hour">12 AM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="fa fa-save"></i>
+        </button>
+      </div>
+      <div class="row time-block">
+        <div class="col-2 hour">1 PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="fa fa-save"></i>
+        </button>
+      </div>
+      <div class="row time-block">
+        <div class="col-2 hour">2 PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="fa fa-save"></i>
+        </button>
+      </div>
+      <div class="row time-block">
+        <div class="col-2 hour">3 PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="fa fa-save"></i>
+        </button>
+      </div>
+      <div class="row time-block">
+        <div class="col-2 hour">4 PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="fa fa-save"></i>
+        </button>
+      </div>
+      <div class="row time-block">
+        <div class="col-2 hour">5 PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="fa fa-save"></i>
+        </button>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
