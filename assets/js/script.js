@@ -5,7 +5,7 @@ var currentDayEl = $("#currentDay");
 // Initial function
 function init(){
     // Add the current day to the top of the page
-    currentDayEl.text(moment().format("dddd, MMMM Mo"));
+    currentDayEl.text(moment().format("dddd, MMMM Do"));
     // for loop to go over all the operating hours
     for (let i = 9; i <= 17; i++){
         // create some variables to store the element and id string
